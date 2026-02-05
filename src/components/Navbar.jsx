@@ -1,41 +1,32 @@
-// src/components/Navbar.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import { NavItems } from "./NavItems";
+import { useState } from "react";
 
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #0f172a;
-  color: #fff;
-`;
+export const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(!open);
+  };
 
-const NavLinks = styled.div`
-  a {
-    margin-left: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    &:hover {
-      color: #38bdf8;
-    }
-  }
-`;
-
-const Navbar = () => {
   return (
-    <Nav>
-      <h1>MyBusiness</h1>
-      <NavLinks>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
-      </NavLinks>
-    </Nav>
+    <nav className="NavbarItems">
+      <h3 className="logo">
+        <i className="fab fa-react"></i>Rayz
+      </h3>
+      <div className="Hamburger-Cross-Icons" onClick={handleClick}>
+        <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+      <ul className={open ? "MenuItems active" : "MenuItems"}>
+        {NavItems.map((Item, index) => {
+          return (
+            <li key={index}>
+              <a href={Item.url} className={Item.cName}>
+                <i className={Item.icon}></i>
+                {Item.title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 };
-
-export default Navbar;
