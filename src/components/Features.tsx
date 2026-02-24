@@ -1,19 +1,19 @@
-import { Badge } from "./ui/badge";
+import { Badge } from "./ui/badge"
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+  CardTitle
+} from "@/components/ui/card"
+import image from "../assets/growth.png"
+import image3 from "../assets/reflecting.png"
+import image4 from "../assets/looking-ahead.png"
 
 interface FeatureProps {
-  title: string;
-  description: string;
-  image: string;
+  title: string
+  description: string
+  image: string
 }
 
 const features: FeatureProps[] = [
@@ -21,21 +21,21 @@ const features: FeatureProps[] = [
     title: "Responsive Design",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+    image: image4
   },
   {
     title: "Intuitive user interface",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+    image: image3
   },
   {
     title: "AI-Powered insights",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
-  },
-];
+    image: image
+  }
+]
 
 const featureList: string[] = [
   "Dark/Light theme",
@@ -46,8 +46,8 @@ const featureList: string[] = [
   "Our team",
   "Responsive design",
   "Newsletter",
-  "Minimalist",
-];
+  "Minimalist"
+]
 
 export const Features = () => {
   return (
@@ -95,5 +95,5 @@ export const Features = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

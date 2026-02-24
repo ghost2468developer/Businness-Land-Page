@@ -1,27 +1,27 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Check } from "lucide-react";
+  CardTitle
+} from "@/components/ui/card"
+import { Check } from "lucide-react"
 
 enum PopularPlanType {
   NO = 0,
-  YES = 1,
+  YES = 1
 }
 
 interface PricingProps {
-  title: string;
-  popular: PopularPlanType;
-  price: number;
-  description: string;
-  buttonText: string;
-  benefitList: string[];
+  title: string
+  popular: PopularPlanType
+  price: number
+  description: string
+  buttonText: string
+  benefitList: string[]
 }
 
 const pricingList: PricingProps[] = [
@@ -37,8 +37,8 @@ const pricingList: PricingProps[] = [
       "2 GB Storage",
       "Upto 4 pages",
       "Community support",
-      "lorem ipsum dolor",
-    ],
+      "lorem ipsum dolor"
+    ]
   },
   {
     title: "Premium",
@@ -52,8 +52,8 @@ const pricingList: PricingProps[] = [
       "4 GB Storage",
       "Upto 6 pages",
       "Priority support",
-      "lorem ipsum dolor",
-    ],
+      "lorem ipsum dolor"
+    ]
   },
   {
     title: "Enterprise",
@@ -67,10 +67,10 @@ const pricingList: PricingProps[] = [
       "8 GB Storage",
       "Upto 10 pages",
       "Priority support",
-      "lorem ipsum dolor",
-    ],
-  },
-];
+      "lorem ipsum dolor"
+    ]
+  }
+]
 
 export const Pricing = () => {
   return (
@@ -143,5 +143,5 @@ export const Pricing = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

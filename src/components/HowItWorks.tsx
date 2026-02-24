@@ -1,10 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons"
 
 interface FeatureProps {
-  icon: JSX.Element;
-  title: string;
-  description: string;
+  icon: JSX.Element
+  title: string
+  description: string
 }
 
 const features: FeatureProps[] = [
@@ -31,8 +31,8 @@ const features: FeatureProps[] = [
     title: "Gamification",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
-  },
-];
+  }
+]
 
 export const HowItWorks = () => {
   return (
@@ -69,5 +69,5 @@ export const HowItWorks = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

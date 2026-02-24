@@ -1,11 +1,11 @@
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card"
+import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons"
+import cubeLeg from "../assets/cube-leg.png"
 
 interface ServiceProps {
-  title: string;
-  description: string;
-  icon: JSX.Element;
+  title: string
+  description: string
+  icon: JSX.Element
 }
 
 const serviceList: ServiceProps[] = [
@@ -25,9 +25,9 @@ const serviceList: ServiceProps[] = [
     title: "Task Automation",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <MagnifierIcon />,
-  },
-];
+    icon: <MagnifierIcon />
+  }
+]
 
 export const Services = () => {
   return (
@@ -72,5 +72,5 @@ export const Services = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}

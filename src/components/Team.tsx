@@ -1,24 +1,24 @@
-import { buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+  CardTitle
+} from "@/components/ui/card"
+import { Facebook, Instagram, Linkedin } from "lucide-react"
 
 interface TeamProps {
-  imageUrl: string;
-  name: string;
-  position: string;
-  socialNetworks: SociaNetworkslProps[];
+  imageUrl: string
+  name: string
+  position: string
+  socialNetworks: SociaNetworkslProps[]
 }
 
 interface SociaNetworkslProps {
-  name: string;
-  url: string;
+  name: string
+  url: string
 }
 
 const teamList: TeamProps[] = [
@@ -29,17 +29,17 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/"
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
+        url: "https://www.facebook.com/"
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
+        url: "https://www.instagram.com/"
+      }
+    ]
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
@@ -48,17 +48,17 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/"
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
+        url: "https://www.facebook.com/"
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
+        url: "https://www.instagram.com/"
+      }
+    ]
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=36",
@@ -67,14 +67,14 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/"
       },
 
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
+        url: "https://www.instagram.com/"
+      }
+    ]
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=17",
@@ -83,15 +83,15 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/"
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
-  },
-];
+        url: "https://www.facebook.com/"
+      }
+    ]
+  }
+]
 
 export const Team = () => {
   const socialIcon = (iconName: string) => {
@@ -170,5 +170,5 @@ export const Team = () => {
         )}
       </div>
     </section>
-  );
-};
+  )
+}

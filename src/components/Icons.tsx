@@ -20,8 +20,8 @@ export const LogoIcon = () => {
       <path d="M3 9h18" />
       <path d="M9 21V9" />
     </svg>
-  );
-};
+  )
+}
 
 export const MedalIcon = () => {
   return (
@@ -101,8 +101,8 @@ export const MedalIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const MapIcon = () => {
   return (
@@ -178,8 +178,8 @@ export const MapIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const PlaneIcon = () => {
   return (
@@ -239,8 +239,8 @@ export const PlaneIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const GiftIcon = () => {
   return (
@@ -340,8 +340,8 @@ export const GiftIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const LightBulbIcon = () => {
   return (
@@ -417,8 +417,8 @@ export const LightBulbIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const WalletIcon = () => {
   return (
@@ -510,8 +510,8 @@ export const WalletIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const ChartIcon = () => {
   return (
@@ -583,8 +583,8 @@ export const ChartIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
 export const MagnifierIcon = () => {
   return (
@@ -660,5 +660,5 @@ export const MagnifierIcon = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}

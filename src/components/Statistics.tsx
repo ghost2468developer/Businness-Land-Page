@@ -1,27 +1,27 @@
 export const Statistics = () => {
   interface statsProps {
-    quantity: string;
-    description: string;
+    quantity: string
+    description: string
   }
 
   const stats: statsProps[] = [
     {
       quantity: "2.7K+",
-      description: "Users",
+      description: "Users"
     },
     {
       quantity: "1.8K+",
-      description: "Subscribers",
+      description: "Subscribers"
     },
     {
       quantity: "112",
-      description: "Downloads",
+      description: "Downloads"
     },
     {
       quantity: "4",
-      description: "Products",
-    },
-  ];
+      description: "Products"
+    }
+  ]
 
   return (
     <section id="statistics">
@@ -37,5 +37,5 @@ export const Statistics = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

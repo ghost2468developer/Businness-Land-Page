@@ -1,49 +1,49 @@
-import { useState } from "react";
+import { useState } from "react"
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+  NavigationMenuList
+} from "@/components/ui/navigation-menu"
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+  SheetTrigger
+} from "@/components/ui/sheet"
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { buttonVariants } from "./ui/button";
-import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
-import { LogoIcon } from "./Icons";
+import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import { buttonVariants } from "./ui/button"
+import { Menu } from "lucide-react"
+import { ModeToggle } from "./mode-toggle"
+import { LogoIcon } from "./Icons"
 
 interface RouteProps {
-  href: string;
-  label: string;
+  href: string
+  label: string
 }
 
 const routeList: RouteProps[] = [
   {
     href: "#features",
-    label: "Features",
+    label: "Features"
   },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "Testimonials"
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Pricing"
   },
   {
     href: "#faq",
-    label: "FAQ",
-  },
-];
+    label: "FAQ"
+  }
+]
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -55,7 +55,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Salon
             </a>
           </NavigationMenuItem>
 
@@ -79,7 +79,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    Salon
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -142,5 +142,5 @@ export const Navbar = () => {
         </NavigationMenuList>
       </NavigationMenu>
     </header>
-  );
-};
+  )
+}
