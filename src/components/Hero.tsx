@@ -10,7 +10,7 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
-              Shadcn
+              Testing
             </span>{" "}
             landing page
           </h1>{" "}
@@ -29,7 +29,7 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <Button className="w-full md:w-1/3">Input pop up</Button>
 
           <a
             rel="noreferrer noopener"
@@ -39,7 +39,7 @@ export const Hero = () => {
               variant: "outline",
             })}`}
           >
-            Github Repository
+            Advert
             <GitHubLogoIcon className="ml-2 w-5 h-5" />
           </a>
         </div>

@@ -29,7 +29,7 @@ export const HeroCards = () => {
 
           <div className="flex flex-col">
             <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardDescription>@johnny_doe</CardDescription>
           </div>
         </CardHeader>
 
